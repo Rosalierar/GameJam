@@ -40,8 +40,14 @@ public class FadeInOut : MonoBehaviour
                 direcao = 1;
             }
         }
+        else if (opacidade <= 0f)
+        {
+            opacidade = 0f;
+            tempo = 1f;
+            direcao = -1;
+        }
 
-        
+
     }
 
     public void OnGUI()
